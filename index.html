@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- הסקריפט הראשי נמצא בתוך הראש ולא בתוך הגוף משיקולים של תכנון מודולרי
+תכנון מודולרי - שימוש במספר קבצי סקריפט
+כל קובץ סקריפט וייעודו
+נבצע ייבוא מקבצי הסקריפט האחרים אל קובץ הסקריפט הראשי
+נבצע ייצוא מקובץ הסקריפט הראשי אל קבצי הסקריפט האחרים
+the attribute defer
+נועדה למנוע מקובץ הסקריפט הראשי לפעול כל עוד הדפדפן
+לא סיים לטעון את המבנה והעיצוב
+(the html and css) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snake_game.css">
+    <title>Snake Game</title>
+    <script src="snake_game_main.js" defer type="module"></script>
+</head>
+
+<body>
+    <h1 id="snake_game_title">Snake - Game</h1>
+    <button class="show_start_game_button">Click Here For Nothing</button>
+
+    <div class="snake_game_frame">
+        <div id="the_snake_game_board"></div>
+    </div>
+
+</body>
+
+</html>
